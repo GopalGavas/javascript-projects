@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: #1f1e1e;
+            color: #fff;
+        }
+
+        .container {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .clock {
+            background-color: orange;
+            border-radius: 10px;
+            font-size: 30px;
+            text-align: center;
+            padding: 15px 30px;
+
+        }
+
+        nav {
+            background-color: #dad9d9;
+            padding: 20px;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+            font-size: 20px;
+            font-weight: bold;
+            border: 1px solid black;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+
+        p {
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="https://github.com/GopalGavas/javascript-projects/tree/main/1-BackgroundColor-changer">
+            Github Link
+        </a>
+    </nav>
+
+    <div class="container">
+        <p>Your Local time</p>
+        <div class="clock"></div>
+    </div>
+
+    <script>
+        const clock = document.querySelector(".clock");
+
+        setInterval(() => {
+            const time = new Date();
+            clock.innerHTML = time.toLocaleTimeString()
+        }, 1000)
+    </script>
+</body>
+
+</html>
