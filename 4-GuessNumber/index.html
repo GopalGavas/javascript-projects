@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Number</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <a href="https://github.com/GopalGavas/javascript-projects/tree/main/4-GuessNumber">
+            Github Link
+        </a>
+    </nav>
+
+    <div class="wrapper">
+        <h2 class="heading">Number guessing game</h2>
+        <div class="container">
+            <div class="rules">
+                <p>1) Try and guess a random number between 1 to 100.</p>
+                <p>2) You have 10 attempts to guess the right number.</p>
+            </div>
+            <form class="form">
+                <label for="guessField">Guess a Number</label>
+                <input type="text" id="guessField" class="guessField">
+                <input type="submit" id="subt" value="Submit guess">
+            </form>
+
+            <div class="resultParas">
+                <p>Previous Guesses: <span class="guesses"></span></p>
+                <p>Guess Remaining: <span class="guess-remaining">10</span></p>
+                <p class="highLow"></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
